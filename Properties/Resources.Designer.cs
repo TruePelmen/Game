@@ -63,9 +63,29 @@ namespace Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BlueBall_PNG___Copy {
+            get {
+                object obj = ResourceManager.GetObject("BlueBall-PNG - Copy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Red_Ball_PNG {
             get {
                 object obj = ResourceManager.GetObject("Red-Ball-PNG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Red_Ball_PNG__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Red-Ball-PNG (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -36,7 +36,11 @@ namespace Game
             this.scoreLabel = new System.Windows.Forms.Label();
             this.labelLose = new System.Windows.Forms.Label();
             this.ball = new System.Windows.Forms.PictureBox();
+            this.blackball = new System.Windows.Forms.PictureBox();
+            this.blueball = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ball)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blackball)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blueball)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonPlay
@@ -96,12 +100,36 @@ namespace Game
             this.ball.TabStop = false;
             this.ball.Click += new System.EventHandler(this.ball_Click);
             // 
+            // blackball
+            // 
+            this.blackball.Image = global::Game.Properties.Resources.Red_Ball_PNG__1_;
+            this.blackball.Location = new System.Drawing.Point(528, 91);
+            this.blackball.Name = "blackball";
+            this.blackball.Size = new System.Drawing.Size(46, 37);
+            this.blackball.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.blackball.TabIndex = 5;
+            this.blackball.TabStop = false;
+            this.blackball.Click += new System.EventHandler(this.blackball_Click);
+            // 
+            // blueball
+            // 
+            this.blueball.Image = global::Game.Properties.Resources.BlueBall_PNG___Copy;
+            this.blueball.Location = new System.Drawing.Point(580, 91);
+            this.blueball.Name = "blueball";
+            this.blueball.Size = new System.Drawing.Size(46, 37);
+            this.blueball.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.blueball.TabIndex = 6;
+            this.blueball.TabStop = false;
+            this.blueball.Click += new System.EventHandler(this.blueball_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(846, 484);
+            this.Controls.Add(this.blueball);
+            this.Controls.Add(this.blackball);
             this.Controls.Add(this.ball);
             this.Controls.Add(this.labelLose);
             this.Controls.Add(this.scoreLabel);
@@ -111,6 +139,8 @@ namespace Game
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MainForm";
             ((System.ComponentModel.ISupportInitialize)(this.ball)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blackball)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blueball)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,6 +154,8 @@ namespace Game
         private System.Windows.Forms.Label scoreLabel;
         private System.Windows.Forms.Label labelLose;
         private System.Windows.Forms.PictureBox ball;
+        private System.Windows.Forms.PictureBox blackball;
+        private System.Windows.Forms.PictureBox blueball;
     }
 }
 
