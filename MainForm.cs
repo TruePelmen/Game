@@ -59,7 +59,7 @@ namespace Game
             if(ckeck_for_click == false) score -= 1;
             scoreLabel.Text = $"Score: {score}";
             ckeck_for_click = false;
-            if(timer.Interval>=100) timer.Interval -= 20;
+            if(timer.Interval>=1000) timer.Interval -= 20;
             if (score<0)
             {
                 labelLose.Visible = true;
