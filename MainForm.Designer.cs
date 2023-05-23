@@ -128,6 +128,7 @@ namespace Game
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(846, 484);
+            this.ControlBox = false;
             this.Controls.Add(this.blueball);
             this.Controls.Add(this.blackball);
             this.Controls.Add(this.ball);
@@ -135,6 +136,7 @@ namespace Game
             this.Controls.Add(this.scoreLabel);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonPlay);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MainForm";
